@@ -1,0 +1,19 @@
+# Data files (too large for GitHub, downloaded separately)
+data/
+
+# Results and logs (optional - see note below)
+logs/
+results_archive/
+logs_archive/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Mac
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/

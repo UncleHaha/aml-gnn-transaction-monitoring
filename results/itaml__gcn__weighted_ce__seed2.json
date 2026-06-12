@@ -1,0 +1,59 @@
+{
+  "run_name": "itaml__gcn__weighted_ce__seed2",
+  "config": {
+    "run_name": "itaml__gcn__weighted_ce__seed2",
+    "architecture": "gcn",
+    "imbalance_strategy": "weighted_ce",
+    "dataset": "itaml",
+    "seed": 2,
+    "hidden_dim": 64,
+    "dropout": 0.5,
+    "heads": 4,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "max_epochs": 200,
+    "patience": 30,
+    "focal_gamma": 2.0,
+    "graphsmote_oversample_ratio": 1.0,
+    "graphsmote_k_neighbors": 5
+  },
+  "dataset_info": {
+    "num_nodes": 515088,
+    "num_edges": 5078345,
+    "num_features": 10,
+    "num_classes": 2,
+    "train_count": 360599,
+    "val_count": 77238,
+    "test_count": 77251,
+    "train_illicit": 5148,
+    "val_illicit": 926,
+    "test_illicit": 283,
+    "has_typology_annotations": true
+  },
+  "model_params": 4994,
+  "best_epoch": 3,
+  "elapsed_seconds": 226.97483706474304,
+  "best_val_metrics": {
+    "auc_pr": 0.021344842820100664,
+    "auc_roc": 0.5214102155819567,
+    "f1_best": 0.061636556854039216,
+    "threshold_best": 0.5809549689292908,
+    "recall_at_50": 0.0021598272138228943,
+    "recall_at_100": 0.0032397408207343412,
+    "recall_at_200": 0.00755939524838013,
+    "n_samples": 77238,
+    "n_positives": 926
+  },
+  "test_metrics": {
+    "auc_pr": 0.015959442301741372,
+    "auc_roc": 0.3497394676985671,
+    "f1_at_threshold": 0.049723756906077346,
+    "threshold": 0.5809549689292908,
+    "recall_at_50": 0.024734982332155476,
+    "recall_at_100": 0.038869257950530034,
+    "recall_at_200": 0.06007067137809187,
+    "n_samples": 77251,
+    "n_positives": 283
+  },
+  "threshold_from_val": 0.5809549689292908
+}

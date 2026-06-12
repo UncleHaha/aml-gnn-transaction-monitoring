@@ -1,0 +1,70 @@
+{
+  "run_name": "elliptic__gcn__weighted_ce__seed0",
+  "config": {
+    "run_name": "elliptic__gcn__weighted_ce__seed0",
+    "architecture": "gcn",
+    "imbalance_strategy": "weighted_ce",
+    "dataset": "elliptic",
+    "seed": 0,
+    "hidden_dim": 64,
+    "dropout": 0.5,
+    "heads": 4,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "max_epochs": 200,
+    "patience": 30,
+    "focal_gamma": 2.0,
+    "graphsmote_oversample_ratio": 1.0,
+    "graphsmote_k_neighbors": 5
+  },
+  "dataset_info": {
+    "num_nodes": 203769,
+    "num_edges": 234355,
+    "num_features": 165,
+    "num_classes": 2,
+    "train_count": 29894,
+    "val_count": 5486,
+    "test_count": 11184,
+    "train_illicit": 3462,
+    "val_illicit": 447,
+    "test_illicit": 636,
+    "train_time_steps": [
+      1,
+      34
+    ],
+    "val_time_steps": [
+      35,
+      39
+    ],
+    "test_time_steps": [
+      40,
+      49
+    ]
+  },
+  "model_params": 14914,
+  "best_epoch": 8,
+  "elapsed_seconds": 15.073611974716187,
+  "best_val_metrics": {
+    "auc_pr": 0.27902836546492005,
+    "auc_roc": 0.8139995729062751,
+    "f1_best": 0.4059869036477829,
+    "threshold_best": 0.5420393347740173,
+    "recall_at_50": 0.02237136465324385,
+    "recall_at_100": 0.05592841163310962,
+    "recall_at_200": 0.16554809843400448,
+    "n_samples": 5486,
+    "n_positives": 447
+  },
+  "test_metrics": {
+    "auc_pr": 0.13676187903248554,
+    "auc_roc": 0.7151023294528994,
+    "f1_at_threshold": 0.21128205128205127,
+    "threshold": 0.5420393347740173,
+    "recall_at_50": 0.012578616352201259,
+    "recall_at_100": 0.031446540880503145,
+    "recall_at_200": 0.07861635220125786,
+    "n_samples": 11184,
+    "n_positives": 636
+  },
+  "threshold_from_val": 0.5420393347740173
+}
