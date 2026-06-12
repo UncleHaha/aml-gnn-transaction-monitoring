@@ -105,19 +105,6 @@ The experimental design and metric definitions correspond to the accompanying re
 
 Evaluation uses AUC-PR as the primary metric (appropriate under extreme class imbalance), with F1, Recall@k, and AUC-ROC reported alongside.
 
-## Citation
-
-If you use this code, please cite the accompanying research article:
-
-```
-Goh, E. S. X. (2026). Transaction Monitoring for Financial Crime Detection.
-Master's research project, Faculty of Business and Economics, University of Malaya.
-```
-
-## License
-
-This project is released under the MIT License. See `LICENSE` for details.
-
 ## Acknowledgements
 
 This work uses the Elliptic Bitcoin dataset (Weber et al., 2019) and the IBM IT-AML synthetic dataset (Altman et al., 2023). Implementation builds on PyTorch and PyTorch Geometric.
